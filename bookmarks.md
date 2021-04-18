@@ -4,6 +4,9 @@ author: Nathan Habib
 date: April, 02 2021
 ---
 
+A collection of web pages that I either wanna come back to or that I did not
+read yet.
+
 # Academic papers
 
 ## Machine Learning
