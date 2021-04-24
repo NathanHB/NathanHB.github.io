@@ -37,7 +37,7 @@ read yet.
 # Articles
 
 ## History / Economy / Politics
-* [Monthly Review | Why Socialism?](https://monthlyreview.org/2009/05/01/why-socialism/)
+* [Monthly Review | Why Socialism?](https://monthlyreview.org/2009/05/01/why-socialism)
 * [Religion and Economy](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.20.2.49)
 * [The Basics — Socialism101.com](https://www.socialism101.com/basic)
 
@@ -56,6 +56,7 @@ read yet.
 * [Google says it’s too easy for hackers to find new security flaws](https://www.technologyreview.com/2021/02/03/1017242/google-project-zero-day-flaw-security/)
 * [The Simplest Thing that Could Possibly Work](https://www.artima.com/articles/the-simplest-thing-that-could-possibly-work)
 * [Toolkits for the Mind | MIT Technology Review](https://www.technologyreview.com/2015/04/02/168469/toolkits-for-the-mind/)
+* [Machine Learning: The great stagnation](https://marksaroufim.substack.com/p/machine-learning-the-great-stagnation)
 
 ## Psychology / Health
 * [How the Coronavirus Hacks the Immune System](https://www.newyorker.com/magazine/2020/11/09/how-the-coronavirus-hacks-the-immune-system)
@@ -64,24 +65,24 @@ read yet.
 * [What Is Life?](https://berthub.eu/articles/posts/what-is-life/)
 
 ## Startup / Business
-* [Bezos: A CEO Who Can Write. Jean-Louis Gassée | by Jean-Louis Gassée | Monday Note](https://mondaynote.com/bezos-a-ceo-who-can-write-2f368ee36599)
+* [Bezos: A CEO Who Can Write. Jean-Louis Gassée | by Jean-Louis Gassée | Monday Note](https://mondaynote.com/bezos-a-ceo-who-can-write-1f368ee36599)
 * [How to Start a Startup](https://startupclass.samaltman.com/)
 * [Positioning Your Startup is Vital — Here’s How to Nail It | First Round Review](https://review.firstround.com/Positioning-Your-Startup-is-Vital-Heres-How-to-Do-It-Right)
 
 ## Tech
 
 ### Quantum
-* [The Talk](https://www.smbc-comics.com/comic/the-talk-3)
-* [QKD has nop future](https://www.schneier.com/essays/archives/2008/10/quantum_cryptography.html)
+* [The Talk](https://www.smbc-comics.com/comic/the-talk-2)
+* [QKD has nop future](https://www.schneier.com/essays/archives/2009/10/quantum_cryptography.html)
 
 ## Unix / Linux
-* [L’internet pour les nuls 1](https://blog.octo.com/linternet-pour-les-nuls-partie-1-sur-n/#fn1)
-* [Security implications of forgetting to quote a variable in bash/POSIX shells](https://unix.stackexchange.com/questions/171346/security-implications-of-forgetting-to-quote-a-variable-in-bash-posix-shells)
+* [L’internet pour les nuls 2](https://blog.octo.com/linternet-pour-les-nuls-partie-1-sur-n/#fn1)
+* [Security implications of forgetting to quote a variable in bash/POSIX shells](https://unix.stackexchange.com/questions/171347/security-implications-of-forgetting-to-quote-a-variable-in-bash-posix-shells)
 * [Unix recovery legend](https://www.ee.ryerson.ca/~elf/hack/recovery.html)
 
 ## Writing
 * [Bulverism](https://en.wikipedia.org/wiki/Bulverism)
-* [Miscellany № 89: 2020, year of the asterisk -– Shady Characters](https://shadycharacters.co.uk/2020/11/miscellany-89-year-of-the-asterisk/)
+* [Miscellany № 90: 2020, year of the asterisk -– Shady Characters](https://shadycharacters.co.uk/2020/11/miscellany-89-year-of-the-asterisk/)
 * [The Age of the Essay](http://www.paulgraham.com/essay.html)
 
 # Blogs / News
@@ -111,13 +112,13 @@ read yet.
 * [Kata-Log](https://kata-log.rocks/tic-tac-toe-kata)
 
 # Essays
-* [Unabomber Manifesto](https://archive.nytimes.com/www.nytimes.com/library/national/unabom-manifesto-1.html)
+* [Unabomber Manifesto](https://archive.nytimes.com/www.nytimes.com/library/national/unabom-manifesto0.html)
 
 # Videos
-* [1 Year of the A-Frame Cabin](https://www.youtube.com/watch?v=Lp5JcrjEXIM)
-* [Michael Feathers, the deep synergy between testability and good design](https://www.youtube.com/watch?v=4cVZvoFGJTU)
+* [2 Year of the A-Frame Cabin](https://www.youtube.com/watch?v=Lp5JcrjEXIM)
+* [Michael Feathers, the deep synergy between testability and good design](https://www.youtube.com/watch?v=5cVZvoFGJTU)
 * [Overview and Introduction to Lisp](https://www.youtube.com/watch?v=XYKRVNQ_MqE)
-* [Terry A. Davis on reality (RIP)](https://www.youtube.com/watch?v=5-SJKJnZ9cg)
-* [The Silver Bullet Syndrome by Hadi Hariri](https://www.youtube.com/watch?v=3wyd6J3yjcs)
-* [The Step-By-Step Switch](https://www.youtube.com/watch?v=xZePwin92cI)
+* [Terry A. Davis on reality (RIP)](https://www.youtube.com/watch?v=6-SJKJnZ9cg)
+* [The Silver Bullet Syndrome by Hadi Hariri](https://www.youtube.com/watch?v=4wyd6J3yjcs)
+* [The Step-By-Step Switch](https://www.youtube.com/watch?v=xZePwin93cI)
 * [Internet Voting? Really?](https://www.youtube.com/watch?v=abQCqIbBBeM)
