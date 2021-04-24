@@ -6,4 +6,4 @@ layout: default
 title: Hey its home
 ---
 
-Here you will find some stuff.  Some more?
+Oh hey.
