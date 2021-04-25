@@ -2,6 +2,8 @@
 title: Bookmarks
 author: Nathan Habib
 date: April, 02 2021
+navlevel: header
+position: 2
 ---
 
 A collection of web pages that I either wanna come back to or that I did not

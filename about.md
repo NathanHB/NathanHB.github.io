@@ -1,9 +1,8 @@
 ---
-layout: default
 title: About
+navlevel: header
+position: 1
 ---
-
-Welcome to my internet living room.
 
 I'm Nathan, First year engineering student at Epita Paris, France.
 

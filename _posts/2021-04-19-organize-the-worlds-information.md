@@ -2,6 +2,7 @@
 title: Organize the world's information
 date: April, 09 2021
 author: Nathan Habib
+navlevel: header
 ---
 
 The Great Library of Alexandria in Alexandria, Egypt, was one of the largest
