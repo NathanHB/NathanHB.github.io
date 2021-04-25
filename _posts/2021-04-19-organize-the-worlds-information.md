@@ -10,7 +10,7 @@ Work In Progress..
 The Great Library of Alexandria in Alexandria, Egypt, was one of the largest
 and most significant libraries of the ancient world.
 
-<img src="Ancientlibraryalex.jpg"
+<img src="assests/images/Ancientlibraryalex.jpg"
      alt="Library of Alexandria"
      style=""/>
 
