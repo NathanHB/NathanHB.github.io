@@ -18,17 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Slow Train Ride
+title: Nathan Habib
 email: nathan.habib19@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Hey welcome to my internet living-room.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nathanhabib1011
 github_username:  NathanHB
 
 # Build settings
-theme: jekyll-theme-kagami
+#theme: jekyll-theme-kagami
 plugins:
   - jekyll-feed
   - jekyll-sitemap
