@@ -10,6 +10,10 @@ Work In Progress..
 The Great Library of Alexandria in Alexandria, Egypt, was one of the largest
 and most significant libraries of the ancient world.
 
+<img src="Ancientlibraryalex.jpg"
+     alt="Library of Alexandria"
+     style=""/>
+
 The Library was part of a larger research institution called the Mouseion,
 which was dedicated to the Muses, the nine goddesses of the arts.  The idea of
 a universal library in Alexandria may have been proposed by Demetrius of
