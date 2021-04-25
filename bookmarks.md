@@ -34,6 +34,10 @@ read yet.
 * [Anticipatory Procrastination](http://pages.cs.wisc.edu/~elder/stuff/ant-proc.pdf)
 * [The Theory of Interstellar Trade](https://fermatslibrary.com/s/the-theory-of-interstellar-trade)
 
+## Search Engines
+* [The Anatomy of a Large-Scale Hypertextual Web Search Engine](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/334.pdf)
+* [Extracting Patterns and Relations from the World Wide Web](http://ilpubs.stanford.edu:8090/421/1/1999-65.pdf)
+
 # Articles
 
 ## History / Economy / Politics
