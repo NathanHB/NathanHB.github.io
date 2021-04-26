@@ -7,7 +7,6 @@ position: 0
 layout: home
 ---
 
-Hello I'm Nathan, First year Software engineering student at Epita Paris, France.
+Hello I'm Nathan, first year software engineering student at Epita Paris, France.
 
 nathan.habib19 __at__ gmail.com
-

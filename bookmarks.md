@@ -43,7 +43,7 @@ read yet.
 # Articles
 
 ## History / Economy / Politics
-* [Monthly Review | Why Socialism?](https://monthlyreview.org/2009/05/01/why-socialism)
+* [Monthly Review](https://monthlyreview.org/2009/05/01/why-socialism)
 * [Religion and Economy](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.20.2.49)
 * [The Basics — Socialism101.com](https://www.socialism101.com/basic)
 
@@ -51,29 +51,30 @@ read yet.
 * [What Gödel Discovered](https://stopa.io/post/269)
 
 ## Philosophy
+
 * [Blind men and an elephant](https://en.wikipedia.org/wiki/Blind_men_and_an_elephant)
-* [Ontological Anarchy in a Nutshell | Hakim Bey](http://monumenttotransformation.org/atlas-of-transformation/html/a/anarchy/ontological-anarchy-in-a-nutshell-hakim-bey.html)
+* [Ontological Anarchy in a Nutshell](http://monumenttotransformation.org/atlas-of-transformation/html/a/anarchy/ontological-anarchy-in-a-nutshell-hakim-bey.html)
 * [The Way of Wiki](https://blogs.voanews.com/digital-frontiers/2011/01/26/the-way-of-wiki/)
-* [What's expected of us | Nature](https://www.nature.com/articles/436150a)
+* [What's expected of us](https://www.nature.com/articles/436150a)
 
 ## Programming
 * [(How to Write a (Lisp) Interpreter (in Python))](https://norvig.com/lispy.html)
 * [a painless guide to CRC error detection algorithms](https://www.zlib.net/crc_v3.txt)
 * [Google says it’s too easy for hackers to find new security flaws](https://www.technologyreview.com/2021/02/03/1017242/google-project-zero-day-flaw-security/)
 * [The Simplest Thing that Could Possibly Work](https://www.artima.com/articles/the-simplest-thing-that-could-possibly-work)
-* [Toolkits for the Mind | MIT Technology Review](https://www.technologyreview.com/2015/04/02/168469/toolkits-for-the-mind/)
+* [Toolkits for the Mind](https://www.technologyreview.com/2015/04/02/168469/toolkits-for-the-mind/)
 * [Machine Learning: The great stagnation](https://marksaroufim.substack.com/p/machine-learning-the-great-stagnation)
 
 ## Psychology / Health
 * [How the Coronavirus Hacks the Immune System](https://www.newyorker.com/magazine/2020/11/09/how-the-coronavirus-hacks-the-immune-system)
 * [Lonely people have a unique brain signature, perhaps due to so much imagined social contact](https://www.psychnewsdaily.com/lonely-people-have-a-unique-brain-signature-perhaps-due-to-so-much-imagined-social-contact/)
-* [The male suicides: how social perfectionism kills | Mosaic](https://mosaicscience.com/story/male-suicide/)
+* [The male suicides: how social perfectionism kills](https://mosaicscience.com/story/male-suicide/)
 * [What Is Life?](https://berthub.eu/articles/posts/what-is-life/)
 
 ## Startup / Business
-* [Bezos: A CEO Who Can Write. Jean-Louis Gassée | by Jean-Louis Gassée | Monday Note](https://mondaynote.com/bezos-a-ceo-who-can-write-1f368ee36599)
+* [Bezos: A CEO Who Can Write. Jean-Louis Gassée](https://mondaynote.com/bezos-a-ceo-who-can-write-1f368ee36599)
 * [How to Start a Startup](https://startupclass.samaltman.com/)
-* [Positioning Your Startup is Vital — Here’s How to Nail It | First Round Review](https://review.firstround.com/Positioning-Your-Startup-is-Vital-Heres-How-to-Do-It-Right)
+* [Positioning Your Startup is Vital — Here’s How to Nail It](https://review.firstround.com/Positioning-Your-Startup-is-Vital-Heres-How-to-Do-It-Right)
 
 ## Tech
 

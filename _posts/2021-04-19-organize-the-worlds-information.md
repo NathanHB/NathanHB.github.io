@@ -5,22 +5,22 @@ author: Nathan Habib
 navlevel: header
 ---
 
-Work In Progress..
+Work in progress..
+
+## Bibliography
+* [The Anatomy of a Large-Scale Hypertextual Web Search Engine](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/334.pdf)
+* [Extracting Patterns and Relations from the World Wide Web](http://ilpubs.stanford.edu:8090/421/1/1999-65.pdf)
 
 The Great Library of Alexandria in Alexandria, Egypt, was one of the largest
 and most significant libraries of the ancient world.
 
+* The web is growing
+* The issue was scaling
+    * Hardware scales up
+    * Disk seek time is still slow
+* Google tries to solve that
+* How
+
 <img src="assests/images/Ancientlibraryalex.jpg"
      alt="Library of Alexandria"
      style=""/>
-
-The Library was part of a larger research institution called the Mouseion,
-which was dedicated to the Muses, the nine goddesses of the arts.  The idea of
-a universal library in Alexandria may have been proposed by Demetrius of
-Phalerum, an exiled Athenian statesman living in Alexandria, to Ptolemy
-I Soter, who may have established plans for the Library, but the Library itself
-was probably not built until the reign of his son Ptolemy II Philadelphus.  The
-Library quickly acquired many papyrus scrolls, due largely to the Ptolemaic
-kings' aggressive and well-funded policies for procuring texts.  It is unknown
-precisely how many such scrolls were housed at any given time, but estimates
-range from 40,000 to 400,000 at its height.
