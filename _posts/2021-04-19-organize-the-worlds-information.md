@@ -11,13 +11,13 @@ Work in progress..
 * [The Anatomy of a Large-Scale Hypertextual Web Search Engine](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/334.pdf)
 * [Extracting Patterns and Relations from the World Wide Web](http://ilpubs.stanford.edu:8090/421/1/1999-65.pdf)
 
-
+## Outline / Summary
 * The web is growing
 * The issue was scaling
     * Hardware scales up
     * Disk seek time is still slow
 * Google tries to solve that
-* How
+* How (Technical)
 
 
 Back in the 1990's, the internet was growing both in size and popularity. This

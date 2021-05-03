@@ -27,9 +27,11 @@ from qiskit.visualization import plot_histogram
 We need to make a Unitary gate that encode the perceptron output into the phase.
 
 That means:
+
 $$
 \vert{\psi}\rangle \longrightarrow e^{2\pi\phi}\vert{\psi}\rangle
 $$
+
 Where $\vert{\psi}\rangle$ is our input state, ($\psi \in \{0, 1\}$), and $2\pi\phi$ is the angle by which our phase has been shifted. The output of our perceptron is either $1$ or $0$ depending on wether $\phi$ is greater than $0.5$ or not (The phase shifted by more than half a turn).
 
 ### Apply a rotation of $k\pi$
@@ -52,6 +54,7 @@ To use our perceptron, we need to be able to encode a phase $\phi$ into our inpu
 For that we use the gate defined below.
 
 This gate is the same as:
+
 $$
 \begin{align}
 U_k &=
@@ -61,6 +64,7 @@ e^{(-2\pi w_k) / 2n} & 0 \\
 \end{pmatrix}
 \end{align}
 $$
+
 where $n$ is our input size.
 
 The gate $U_k$ is applied to the $k^{th}$ input, along with a global phase shift of $\pi$.
