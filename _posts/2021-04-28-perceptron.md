@@ -65,15 +65,15 @@ input (a quantum state). For that we use the gate defined below.
 
 This gate is the same as:
 
-\\[
+$$
 \begin{align}
 U_k &=
 \begin{pmatrix}
-e^{(-2\pi w_k) / 2n} & 0 \\
+e^{(-2\pi w_k) / 2n} & 0 \\\\
 0    & e^{(2\pi w_k) / 2n}
 \end{pmatrix}
 \end{align}
-\\]
+$$
 
 where \\(n\\) is our input size.
 
