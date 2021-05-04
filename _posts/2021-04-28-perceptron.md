@@ -38,7 +38,7 @@ That means:
 \vert{\psi}\rangle \longrightarrow e^{2\pi\phi}\vert{\psi}\rangle
 \\]
 
-Where \\(\vert{\psi}\rangle\\) is our input state, (\\(\psi \in \{0, 1\}\\)), and
+Where \\(\vert{\psi}\rangle\\) is our input state, (\\(\psi \in \\{0, 1\\} \\)), and
 \\(2\pi\phi\\) is the angle by which our phase has been shifted. The output of our
 perceptron is either \\(1\\) or \\(0\\) depending on wether \\(\phi\\) is greater than
 \\(0.5\\) or not (The phase shifted by more than half a turn).
