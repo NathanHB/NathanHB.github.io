@@ -2,10 +2,16 @@
 title: Quantum perceptron
 date: April, 09 2021
 author: Nathan Habib
-mathjax: true
 ---
 
 # Implementation of the Quantum perceptron as found in [Simulating a perceptron on a quantum computer](https://arxiv.org/pdf/1412.3635.pdf)
+
+This post assumes basic knowledge on the subject of quantum computing and
+algorithms, quantum gates, quantum Fourier transform etc..
+
+This page is still being edited and is still growing...
+
+A another post about how to make that neuron learn is on the way (hopefully).
 
 ## Imports
 
@@ -28,15 +34,19 @@ We need to make a Unitary gate that encode the perceptron output into the phase.
 
 That means:
 
-$$
+\\[
 \vert{\psi}\rangle \longrightarrow e^{2\pi\phi}\vert{\psi}\rangle
-$$
+\\]
 
-Where $\vert{\psi}\rangle$ is our input state, ($\psi \in \{0, 1\}$), and $2\pi\phi$ is the angle by which our phase has been shifted. The output of our perceptron is either $1$ or $0$ depending on wether $\phi$ is greater than $0.5$ or not (The phase shifted by more than half a turn).
+Where \\(\vert{\psi}\rangle\\) is our input state, (\\(\psi \in \\{0, 1\\} \\)), and
+\\(2\pi\phi\\) is the angle by which our phase has been shifted. The output of our
+perceptron is either \\(1\\) or \\(0\\) depending on wether \\(\phi\\) is greater than
+\\(0.5\\) or not (The phase shifted by more than half a turn).
 
-### Apply a rotation of $k\pi$
+### Apply a rotation of \\(k\pi\\)
 
-First, this gate applies a __controlled__ global phase shift of $k\pi$ where $k$ is _the control_count_ argument.
+First, this gate applies a __controlled__ global phase shift of \\(k\pi\\) where
+\\(k\\) is _the control_count_ argument.
 
 
 ```python
@@ -48,10 +58,10 @@ def Cglobal_phase_shift(quantum_circuit, theta, qubit, control_qubit, control_co
     return quantum_circuit.to_gate(label="U0")
 ```
 
-### Apply a rotation of $\frac{2\pi w_k}{2n}$ 
+### Apply a rotation of \\(\frac{2\pi w_k}{2n}\\) 
 
-To use our perceptron, we need to be able to encode a phase $\phi$ into our input (a quantum state).
-For that we use the gate defined below.
+To use our perceptron, we need to be able to encode a phase \\(\phi\\) into our
+input (a quantum state). For that we use the gate defined below.
 
 This gate is the same as:
 
@@ -59,16 +69,18 @@ $$
 \begin{align}
 U_k &=
 \begin{pmatrix}
-e^{(-2\pi w_k) / 2n} & 0 \\
+e^{(-2\pi w_k) / 2n} & 0 \\\\
 0    & e^{(2\pi w_k) / 2n}
 \end{pmatrix}
 \end{align}
 $$
 
-where $n$ is our input size.
+where \\(n\\) is our input size.
 
-The gate $U_k$ is applied to the $k^{th}$ input, along with a global phase shift of $\pi$.
-In the end, all of the gates have received a global phase shift of $\pi$ plus their respective shift depending on the weight associating with them ($w_k$).
+The gate \\(U_k\\) is applied to the \\(k^{th}\\) input, along with a global phase
+shift of \\(\pi\\). In the end, all of the gates have received a global phase shift
+of \\(\pi\\) plus their respective shift depending on the weight associating with
+them (\\(w_k\\)).
 
 
 ```python
@@ -82,11 +94,16 @@ def perceptron_U(quantum_circuit, w, n, qubit):
     return quantum_circuit.to_gate(label="U" + str(qubit+1))
 ```
 
-We will not be using the gate defined above because we need it to be __controlled__. That means we want it to activate only if another bit is set to $1$.
+We will not be using the gate defined above because we need it to be
+__controlled__. That means we want it to activate only if another bit is set to
+\\(1\\).
 
-To be able To be used with the Quantum Phase Estimation algorithm, we need a controlled version of our Unitary, this is the one defined below.
-We also need to be able to apply one gate multiple time efficiently that is why we have a control_count argument.
-This argument will multiply our rotation by a certain amount (always an integer) so that for example, instead of applying our gate two times, we just apply one gate but with two times the rotation.
+To be able To be used with the Quantum Phase Estimation algorithm, we need
+a controlled version of our Unitary, this is the one defined below. We also
+need to be able to apply one gate multiple time efficiently that is why we have
+a control_count argument. This argument will multiply our rotation by a certain
+amount (always an integer) so that for example, instead of applying our gate
+two times, we just apply one gate but with two times the rotation.
 
 
 ```python
@@ -105,32 +122,49 @@ def Cperceptron_U(quantum_circuit, w, n, qubit, control_qbit, control_count):
 
 #### How to find the weights by hand:
 
-Suppose we want to reproduce the not function. That is, when input is 1 we want 0, and when input is 0 we want 1.
+Suppose we want to reproduce the not function. That is, when input is 1 we want
+0, and when input is 0 we want 1.
 
-To do this we will want a weight associated with our input that produces a phase shift greater than pi when our input is 0 and lower when the input is 1.
+To do this we will want a weight associated with our input that produces
+a phase shift greater than pi when our input is 0 and lower when the input is
+1.
 
 
-We use two Unitary gates on our input, the first one shifts the phase by pi radian and the second by either $\frac{-2\pi w_1}{2n}$ or $\frac{2\pi w_1}{2n}$
+We use two Unitary gates on our input, the first one shifts the phase by pi
+radian and the second by either \\(\frac{-2\pi w_1}{2n}\\) or \\(\frac{2\pi w_1}{2n}\\)
 
 The total shift then is:
 
 $$
-i\pi - \frac{2\pi w_1}{2n} = 2i\pi (\frac{w_1 - 1}{2}) \text{ when } x = 0\\
-\text{and}\\
-i\pi + \frac{2\pi w_1}{2n} = 2i\pi (\frac{w_1 + 1}{2}) \text{ when } x = 1\\
-\text{We take, } \frac{w_1 - 1}{2} = \phi_0\\
-\text{and } \frac{w_1 + 1}{2} = \phi_1
+\begin{align}
+i\pi - \frac{2\pi w_1}{2n} &= 2i\pi (\frac{w_1 - 1}{2}) \text{ when } x = 0\\[1.2em]
+
+\text{and}\\[1.2em]
+
+i\pi + \frac{2\pi w_1}{2n} &= 2i\pi (\frac{w_1 + 1}{2}) \text{ when } x = 1\\[2em]
+
+\text{We take, } \frac{w_1 - 1}{2} &= \phi_0 \\
+
+\text{and } \frac{w_1 + 1}{2} &= \phi_1
+\end{align}
 $$
 
-Now remember we want the phase shift to be greater than half a turn when $x = 0$ than means that $\phi_0$ needs to be greater than $\frac{1}{2}$.
 
-For the same reason, we want $\phi_1$ to be lower than $\frac{1}{2}$.
+Now remember we want the phase shift to be greater than half a turn when 
+\\(x = 0\\) than means that \\(\phi_0\\) needs to be greater than \\(\frac{1}{2}\\).
 
-__Important:__ To measure to phase shift need to make use of the quantum fourrier transform, however in qiksit this algorithm and its inverse are swapped.
-It doesnt matter as long as we stay coherent in the way we handle the QTF and its inverse. Because of the way the QFT works we also need to stay coherent on the direction
-in which we rotate our phase. For this reason we need to rotate our phases the other way around, for that we only need to take the oppopsite of $\phi_0$ and $\phi_1$.
+For the same reason, we want \\(\phi_1\\) to be lower than \\(\frac{1}{2}\\).
 
-Knowing all of this we can graph $\phi_0$ and $\phi_1$ with $w_1$ as variable to see what values of $w_1$ will fulfill our needs.
+__Important:__ To measure to phase shift need to make use of the quantum
+fourrier transform, however in qiksit this algorithm and its inverse are
+swapped. It doesnt matter as long as we stay coherent in the way we handle the
+QTF and its inverse. Because of the way the QFT works we also need to stay
+coherent on the direction in which we rotate our phase. For this reason we need
+to rotate our phases the other way around, for that we only need to take the
+oppopsite of \\(\phi_0\\) and \\(\phi_1\\).
+
+Knowing all of this we can graph \\(\phi_0\\) and \\(\phi_1\\) with \\(w_1\\) as variable
+to see what values of \\(w_1\\) will fulfill our needs.
 
 
 ```python
@@ -155,14 +189,17 @@ plt.plot(w, phi1, "b");
 ![png](/assets/images/output_15_0.png)
 
 
-We can then determine than $w_1$ need to be greather than between $-1$ and $0$ we therefore take $w_k = -0.5$. for us to simulate the not function.
+We can then determine than \\(w_1\\) need to be greather than between \\(-1\\) and \\(0\\)
+we therefore take \\(w_k = -0.5\\). for us to simulate the not function.
 
-__note:__ because we are talking about rotations around the unit circle, the weights are modulo 1.
+__note:__ because we are talking about rotations around the unit circle, the
+weights are modulo 1.
 
 #### Determine the precision
 
-In our case, we chose a weight equal to -0.5, when we do the calculation we see that the rotation will then be a quarter of a turn and three quarter of a turn depending on
-the value of x.
+In our case, we chose a weight equal to -0.5, when we do the calculation we see
+that the rotation will then be a quarter of a turn and three quarter of a turn
+depending on the value of x.
 
 
 ```python
