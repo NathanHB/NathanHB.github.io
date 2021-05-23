@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Organize the world’s information</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Organize the world’s information</h1>
+<p class="date">April, 09 2021</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-keyword-matching-era">The keyword matching era</a></li>
+<li><a href="#the-google-era">The Google era</a>
+<ul>
+<li><a href="#pagerank">PageRank</a></li>
+<li><a href="#indexing-the-web">Indexing the web</a></li>
+<li><a href="#answering-a-search-query">Answering a search query</a></li>
+</ul></li>
+<li><a href="#what-about-today">What about today?</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</nav>
+<p>Back in the 1990s, the internet was growing both in size and popularity. This called the need for efficient page retrieving systems that could search trough millions of web pages and answers millions of queries. From 1993 to 1995, the web roughly double every 3 months, going from 130 websites crawled by the <em>World Wide Web Wanderer</em> in June 1993 to 100,000 pages in January 1996, <span class="citation" data-cites="MGray">[1]</span>.</p>
+<figure>
+<img src="../assets/images/Ancientlibraryalex.jpg" alt="Library of Alexandria" /><figcaption aria-hidden="true">Library of Alexandria</figcaption>
+</figure>
+<p>First came Archie.</p>
+<h2 id="the-keyword-matching-era">The keyword matching era</h2>
+<p>In 1990 <a href="https://www.youtube.com/watch?v=TdM3MNq9YL0">Archie</a> (short for file archive) was a search engine that worked by going through a list of public File Transfer Protocol sites. It then created an index of the FTP files. We used a client to enter keywords and the server would then send back a list of filenames that we then had to download to see the content of. Archie used <em>grep</em> to look for the keywords in the filenames. This technique was of course very slow and required databases to be updated by hand. Moreover, the quality of the search was far from good, if the title was not a perfect match it was near impossible to find anything, because using matching keywords in title does not give us anything about the quality of the page or even its content.</p>
+<p>The paradigm of keyword matching to find web pages continued until around 1995. With various other search engine: YAHOO!, LYCOS.</p>
+<p>Then came Google.</p>
+<h2 id="the-google-era">The Google era</h2>
+<p>In 1996, two PhD students at Stanford University (Larry Page and Sergey Brin) began doing research on search engines. They had two main complaints concerning the search engines that were widely used at that time: First, they worked by counting how many times a keyword appeared on a page and ranking result accordingly, second, research in the field was underdeveloped and therefore commercial search engine were very difficult to do experiments with. Their work eventually led to the creation of Google, and they published their results for the first time in <em>The anatomy of a large-scale hypertextual web search engine</em>, <span class="citation" data-cites="brin1998anatomy">[2]</span>.</p>
+<p>Google had to be fast, efficient, reliable in its search results and above all, scalable.</p>
+<p>So how did they achieve this?</p>
+<h3 id="pagerank">PageRank</h3>
+<p>The biggest issue with current search engines was the quality of the results. To address this, Page and Brin came up with the idea of using a probability distribution. Each page had a probability that represented how likely a user is to end up on a page if he were put on a random web page and kept clicking random links, <span class="citation" data-cites="brin1998anatomy">[2]</span> <span class="citation" data-cites="wilf2001searching">[3]</span>.</p>
+<p>That means that the rank of a website is proportional to the rank of the sum of websites that links to it. To represent the relationship between <span class="math inline">\(n\)</span> websites lets use a <span class="math inline">\(n \times n\)</span> matrix, <span class="math inline">\(A\)</span>, where the column <span class="math inline">\(j\)</span> of the <span class="math inline">\(i^{th}\)</span> row is <span class="math inline">\(1\)</span> if the website <span class="math inline">\(j\)</span> has a link to <span class="math inline">\(i\)</span> and <span class="math inline">\(0\)</span> otherwise. The importance of a page <span class="math inline">\(i\)</span> is then <span class="math inline">\(x_i\)</span> and can then be written as:</p>
+<p><span class="math display">\[
+x_i = \sum_{j=1}^{n}{a_{i,j}x_j}
+\]</span></p>
+<p>Where <span class="math inline">\(a_{i,j}\)</span> is the value of <span class="math inline">\(A\)</span> at the index <span class="math inline">\(i,j\)</span>.</p>
+<p>That problem is an eigenvalue and eigenvector problem (that is, it is equivalent to finding the eigenvectors and eigenvalues of the matrix <span class="math inline">\(A\)</span>). All you have to do is take the eigenvector corresponding to the highest eigenvalue of the matrix <span class="math inline">\(A\)</span>. Then, the most important website is the one with the largest entry in that vector.</p>
+<p>That is the very basic explanation, PageRank uses a slightly modified version:</p>
+<p>For example, it uses a damping factor <span class="math inline">\(d \in [0,1]\)</span> that represents the probability that a user gets bored and requests a new random page (remember our user clicking on random links), this damping factor is found by trial and error. Users would rate the quality of their search and hyperparameter (including the damping factor would be updated accordingly). Also, the rank of the pages that links to our page are normalized by the number of links leaving that page.</p>
+<p><span class="math display">\[
+pageRank(P) = (1-d) + d\left(\sum_{j=1}^k{\frac{pageRank(T_j)}{C(T_j)}}\right)
+\]</span></p>
+<p>Where <span class="math inline">\(T_1 ... T_k\)</span> are the web pages that link to <span class="math inline">\(P\)</span> and <span class="math inline">\(C(T_j)\)</span> is the number of links going out of <span class="math inline">\(T_j\)</span>.</p>
+<p>That is pretty much it for the pageRank algorithm however, Google uses many more technics to evaluate a search query and rank the results.</p>
+<h3 id="indexing-the-web">Indexing the web</h3>
+<p>To be able to return excellent results with very low latency you have to find an optimal way to store and evaluate the data you are dealing with. Here how Google does it:</p>
+<p>First they send web crawlers to downloads all the web pages from URL found in a URL file list.</p>
+<p>Then these pages are compressed into a repository.</p>
+<p>Every page is then parsed and, for every word in the page we make a list of all the occurrences of that word, (a hit list). The hit list contains for each occurrence, the position of the word, the capitalization, the font and size of the word.</p>
+<p>An anchor-file is also made, it consists of a list of all the URLs on the page, the anchor file is then given to the crawlers for download.</p>
+<p>The anchor is also used to compute the matrix that we will use for the pageRank algorithm.</p>
+<figure>
+<img src="../assets/images/search_engine.svg" alt="Simplified search engine diagram" /><figcaption aria-hidden="true">Simplified search engine diagram</figcaption>
+</figure>
+<p>Now that we have for each page a list of words and information about their position and function in the page, we can use it to evaluate a search query.</p>
+<h3 id="answering-a-search-query">Answering a search query</h3>
+<p>Answering a query is pretty simple, first let’s look at the case of a one word query:</p>
+<p>To rank a page, Google uses the hit list for that word. The hit list information are weighted with arbitrary weights, (the process of determining the right weight is empirical, which means that they were updated depending on user’s feedback), the score given by this method is called the IR score.</p>
+<p>For example is the query is: <strong>banana</strong>, Google will look <strong>banana</strong>’s hit list for each web page. If for one web page the word appears more often but with a very small font and in a footer, it will score less than a page with fewer occurrences of the word but with the word appearing the title of the page.</p>
+<p>For multiple word queries, the idea is the same, each word are evaluated separately, but more weights are given if the words appear closer to each other.</p>
+<p>Finally, the IR score is combined with the pageRank to give the final page rank of the page.</p>
+<h2 id="what-about-today">What about today?</h2>
+<p>What I explained was the way Google used to work, in the early 2000s, since then Google has made significant changes to its algorithm, from the addition of machine learning, to <em>NoFollow</em> links.</p>
+<p>Today Google’s algorithm is the most efficient and complicated in the world, as it serves <span class="math inline">\(3.5\)</span> billions search queries per day with great accuracy.</p>
+<h2 class="unnumbered" id="references">References</h2>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-MGray" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><span>“Measuring the growth of the web.”</span> <a href="https://www.mit.edu/people/mkgray/growth/">https://www.mit.edu/people/mkgray/growth/</a>.</div>
+</div>
+<div id="ref-brin1998anatomy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. Brin and L. Page, <span>“The anatomy of a large-scale hypertextual web search engine,”</span> <em>Computer networks and ISDN systems</em>, vol. 30, no. 1–7, pp. 107–117, 1998.</div>
+</div>
+<div id="ref-wilf2001searching" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">H. S. Wilf, <span>“Searching the web with eigenvectors,”</span> <em>en l’inia. Disponible sur Internet: <a href="https://www2.math.upenn.edu/~wilf/website/KendallWei.pdf">https://www2.math.upenn.edu/~wilf/website/KendallWei.pdf</a></em>, 2001.</div>
+</div>
+</div>
+</body>
+</html>
