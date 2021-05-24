@@ -23,7 +23,8 @@ position: 20
 * Neural Network from scratch, (go C++)
 * Artificial intelignece in Lisp
 * Instal ArchLinux (took me enough time and learned enough to consider it a project)
-* RSS reader in rust
+* In terminal RSS reader in rust (Still just an idea but my frustration is growing everyday)
 
 ## Internship
-* Tensorflow And all that
+* Medical Image segmentation using tensorflow and convolutional neural nets,
+  (implemented and tried to go beyond Unet, Unet++)
