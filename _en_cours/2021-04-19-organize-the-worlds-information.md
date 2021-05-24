@@ -10,7 +10,7 @@ millions of web pages and answers millions of queries. From 1993 to 1995, the
 web roughly double every 3 months, going from 130 websites crawled by the
 _World Wide Web Wanderer_ in June 1993 to 100,000 pages in January 1996, @MGray.
 
-![Library of Alexandria](../assets/images/Ancientlibraryalex.jpg)
+![Library of Alexandria](https://upload.wikimedia.org/wikipedia/commons/6/64/Ancientlibraryalex.jpg)
 
 First came Archie.
 
@@ -120,7 +120,7 @@ page, the anchor file is then given to the crawlers for download.
 The anchor is also used to compute the matrix that we will use for the pageRank
 algorithm.
 
-![Simplified search engine diagram](../assets/images/search_engine.svg)
+![Simplified search engine diagram](https://raw.githubusercontent.com/NathanHB/NathanHB.github.io/gh-pages/assets/images/search_engine.svg)
 
 Now that we have for each page a list of words and information about their
 position and function in the page, we can use it to evaluate a search query.
