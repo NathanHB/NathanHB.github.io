@@ -62,12 +62,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Nathan Habib
     subtitle: >
-      French-American living in Paris.
-
-      - I'm a sofwtare engineering student in Epita Paris.
-      Specialized in Machine Learning and data science / engineering.
-      I'm also part of the LRDE (Epita's laboratory) where I focus on
-      brain tumor segmentation using deep neural networks
+      Software engineer specialized in ML engineering, French-American and living in Paris.
 
     imageUrl: "/pp2.jpg"
     imageWidth: 160
