@@ -2,6 +2,7 @@
 title: "organize the worlds information"
 date: 2022-08-02T18:55:47+01:00
 draft: false
+katex: true
 ---
 
 Back in the 1990s, the internet was growing both in size and popularity. This
@@ -60,25 +61,26 @@ random links, @brin1998anatomy @wilf2001searching.
 
 That means that the rank of a website is proportional to the rank of the sum of
 websites that links to it. To represent the relationship between $n$ websites
-lets use a $n \times n$ matrix, $A$, where the column $j$ of the $i^{th}$ row is $1$
-if the website $j$ has a link to $i$ and $0$ otherwise.
-The importance of a page $i$ is then $x_i$ and can then be written as:
+lets use a \\(n \times n\\) matrix, \\(A\\), where the column \\(j\\) of the
+\\(i^{th}\\) row is \\(1\\) if the website \\(j\\) has a link to \\(i\\) and \\(0\\)
+otherwise. The importance of a page $i$ is then \\(x_i\\) and can then be
+written as:
 
 $$
 x_i = \sum_{j=1}^{n}{a_{i,j}x_j}
 $$
 
-Where $a_{i,j}$ is the value of $A$ at the index $i,j$.
+Where \\(a_{i,j}\\) is the value of \\(A\\) at the index \\(i,j\\).
 
 That problem is an eigenvalue and eigenvector problem (that is, it is
-equivalent to finding the eigenvectors and eigenvalues of the matrix $A$). All you
+equivalent to finding the eigenvectors and eigenvalues of the matrix \\(A\\)). All you
 have to do is take the eigenvector corresponding to the highest eigenvalue of
-the matrix $A$. Then, the most important website is the one with the largest
+the matrix \\(A\\). Then, the most important website is the one with the largest
 entry in that vector.
 
 That is the very basic explanation, PageRank uses a slightly modified version:
 
-For example, it uses a damping factor $d \in [0,1]$ that represents the
+For example, it uses a damping factor \\(d \in [0,1]\\) that represents the
 probability that a user gets bored and requests a new random page (remember our
 user clicking on random links), this damping factor is found by trial and
 error. Users would rate the quality of their search and hyperparameter
@@ -90,8 +92,8 @@ $$
 pageRank(P) = (1-d) + d\left(\sum_{j=1}^k{\frac{pageRank(T_j)}{C(T_j)}}\right)
 $$
 
-Where $T_1 ... T_k$ are the web pages that link to $P$ and $C(T_j)$ is the number of links
-going out of $T_j$.
+Where \\(T_1 ... T_k\\) are the web pages that link to \\(P\\) and \\(C(T_j)\\)
+is the number of links going out of \\(T_j\\).
 
 
 That is pretty much it for the pageRank algorithm however, Google uses many
@@ -120,7 +122,7 @@ page, the anchor file is then given to the crawlers for download.
 The anchor is also used to compute the matrix that we will use for the pageRank
 algorithm.
 
-![Simplified search engine diagram](https://raw.githubusercontent.com/NathanHB/NathanHB.github.io/gh-pages/assets/images/search_engine.svg)
+![Simplified search engine diagram](/search_engine.svg)
 
 Now that we have for each page a list of words and information about their
 position and function in the page, we can use it to evaluate a search query.
@@ -154,7 +156,7 @@ then Google has made significant changes to its algorithm, from the addition of
 machine learning, to _NoFollow_ links.
 
 Today Google's algorithm is the most efficient and complicated in the world, as
-it serves $3.5$ billions search queries per day with great accuracy.
+it serves \\(3.5\\) billions search queries per day with great accuracy.
 
 ## References
 
