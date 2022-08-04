@@ -80,6 +80,8 @@ params:
         url: articles
       - name: Projects
         url: projects
+      - name: CV
+        url: "./main.pdf"
 
   # home-info mode
   homeInfoParams:
@@ -91,8 +93,6 @@ params:
       url: "https://twitter.com/nathanhabib1011"
     - name: github
       url: "https://github.com/NathanHB"
-    - name: cv
-      url: "/main.pdf"
     - name: linkedin
       url: "https://www.linkedin.com/in/nathan-habib1907/"
     - name: instagram
